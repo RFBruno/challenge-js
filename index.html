@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css  "href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
 </head>
 <body>
-    <h1>1 - Cronometro</h1>
    
-    <div class="fundo">
-        <div class= "tempo">
-        <p>00:00.00</p>
-        <p id ="tempo"></p>
+        <h1>1 - Cronometro</h1>
+        <div class="fundo">
+        <div class = "tempo row1">
+        <p id ="tempo">
+            <span>00:00</span>
+            <span class="mili">.00</span>
+        </p>
         </div>
-       
-        
-        <div class="Cronometro">
-            <button>Reset</button>
-            <button>Start</button>
-            </div>
+           
+        <div class="Cronometro row2">
+        <button class = "btn reset">Reset</button>
+        <button class = "btn start">Start</button>
+        </div>
     </div>   
+    <script>scr ="script.js"</script>
 </body>
 </html>
