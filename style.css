@@ -1,0 +1,44 @@
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    min-width: 400px;
+    height: 50%;
+    min-height: 400px;
+
+    background-color: black;
+    color: white;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 #tempo{
+    font-size: 3rem;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 2rem;
+}
+
+.reset{
+    background-color: rgba(189, 125, 6, 0.877);
+}
+
+.start{
+    background-color: rgba(5, 110, 5, 0.795);
+}
