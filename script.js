@@ -4,20 +4,27 @@ let mili = 0;
 let time;
 
 let callback = () => {
-    sec++;
-
+    mili++;
     if(sec == 60){
         min++;
         sec = 0;
     }
 
-    let time = `${min < 10 ? '0'+min : min}:${sec < 10 ? '0'+sec : sec}.${mili < 10 ? '0'+mili : mili}`;
+    let time = `${min < 10 ? '0'+min : min}:${sec < 10 ? '0'+sec : sec}`;
     document.querySelector('#tempo span').innerHTML = time;
+
+    if(mili == 99){
+        sec++;
+        mili = 00
+    }
+    let timeMille = `.${mili < 10 ? '0'+mili : mili}`;
+    document.querySelector('.mili').innerHTML = timeMille;
 }
 
 function start(){
-   time = setInterval(callback,1000);
-}
+    clearInterval(time);
+    time = setInterval(callback,10);
+   }
 
 function reset(){
     sec = 0;
