@@ -37,14 +37,14 @@ body{
     font-size: 10rem;
     font-family: "Fonte 007";
     margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
+    text-align: center;
 }
 
 #tempo .mili{
+    display: inline-block;
+    width: 60px;
     font-size: 2rem;
-    
+    margin-left: -40px;
 }
 .row2{
     display: flex;
