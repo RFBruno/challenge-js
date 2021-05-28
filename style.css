@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Fonte 007";
+    src: url("./DS-DIGIT.TTF");
+}
+h1{
+    color: rgb(200, 233, 233);
+}
+body{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    background-color: dimgrey;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40%;
+    min-width: 800px;
+    min-height: 300px;
+
+    background-color: black;
+    color: rgb(202, 115, 44);
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 #tempo{
+    font-size: 10rem;
+    font-family: "Fonte 007";
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+#tempo .mili{
+    font-size: 2rem;
+    
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 5px 10px 10px 0;
+    width: 100px;
+    height: 60px;
+    color: white;
+    font-size: 0,5rem;
+}
+
+.reset{
+    background-color: rgba(189, 125, 6, 0.877);
+   }
+.reset:hover{
+    background-color: rgb(75, 58, 14);
+    cursor: pointer;
+}
+
+
+.start{
+    background-color: rgba(5, 110, 5, 0.795);
+}
+.start:hover{
+    background-color: rgba(44, 82, 44, 0.795);
+    cursor: pointer;
+}
